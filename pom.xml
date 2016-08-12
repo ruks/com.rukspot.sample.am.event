@@ -74,7 +74,7 @@
 		<dependency>
 			<groupId>com.rukspot</groupId>
 			<artifactId>com.rukspot.httpclient</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
@@ -88,6 +88,14 @@
 			<id>wso2-nexus</id>
 			<name>WSO2 internal Repository</name>
 			<url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+		</repository>
+		<repository>
+			<id>com.rukspot.httpclient-mvn-repo</id>
+			<url>https://raw.github.com/ruks/com.rukspot.httpclient/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
 		</repository>
 	</repositories>
 	<properties>
