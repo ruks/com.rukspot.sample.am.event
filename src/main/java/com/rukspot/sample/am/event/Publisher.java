@@ -9,7 +9,7 @@ import org.wso2.carbon.databridge.core.exception.StreamDefinitionStoreException;
 
 public class Publisher {
 	static {
-		System.setProperty("javax.net.ssl.trustStore","/mnt/172.30.9.75/wum/wso2am-2.0.0/repository/resources/security/wso2carbon.jks");
+		System.setProperty("javax.net.ssl.trustStore","/home/rukshan/apim/2.1.0/wso2am-analytics-2.1.0/repository/resources/security/wso2carbon.jks");
 		System.setProperty("javax.net.ssl.trustStorePassword", "wso2carbon");
 	}
 
@@ -17,12 +17,12 @@ public class Publisher {
 			InterruptedException, StreamDefinitionStoreException,
 			MalformedStreamDefinitionException {
 
-		System.setProperty("carbon.home","/mnt/172.30.9.75/wum/wso2am-2.0.0");
+		System.setProperty("carbon.home","/home/rukshan/apim/2.1.0/wso2am-analytics-2.1.0");
 
 		try {
 //			DataPublisher p = new DataPublisher("tcp://localhost:7612","admin", "admin");
-			String url ="tcp://172.30.9.144:7611";
-			DataPublisher p = new DataPublisher(url, "admin","bA3RxeyU6gvt");
+			String url ="tcp://localhost:7612";
+			DataPublisher p = new DataPublisher(url, "admin","admin");
 			
 			int i = 0;
 			int s = 0;
